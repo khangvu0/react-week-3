@@ -4,6 +4,7 @@ import Easy from './pages/Easy';
 import Medium from './pages/Medium';
 import MovieDetail from './pages/MovieDetail';
 import Hard from './pages/Hard';
+import TaskDetail from './pages/TaskDetail';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -17,6 +18,7 @@ export default function App() {
                 <Route path="/medium" element={<Medium />} />
                 <Route path="/medium/:id" element={<MovieDetail />} />
                 <Route path="/hard" element={<Hard />} />
+                <Route path="/hard/:id" element={<TaskDetail />} />
             </Routes>
             <Footer />
         </BrowserRouter>
