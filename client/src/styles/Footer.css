@@ -1,4 +1,6 @@
 .footer {
+    position: fixed;
+    bottom: 0;
     width: 100%;
     background-color: var(--main-color);
     padding: 1.25rem 0;
