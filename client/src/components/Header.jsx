@@ -12,12 +12,6 @@ export default function Header() {
                 <div className="nav_menu" id="nav-menu">
                     <ul className="nav_list">
                         <li className="nav_item">
-                            <Link to="/" className="nav_link">
-                                Home
-                            </Link>
-                        </li>
-
-                        <li className="nav_item">
                             <Link to="/easy" className="nav_link">
                                 Easy
                             </Link>
