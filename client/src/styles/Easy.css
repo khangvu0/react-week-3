@@ -5,7 +5,7 @@
     justify-content: center;
     height: 80vh;
     text-align: center;
-    background-color: #f5f5f5;
+    background-color: var(--card-color);
 }
 
 .counter {
@@ -22,7 +22,7 @@
     margin-top: 1rem;
 }
 
-button {
+.easy-btn {
     padding: 0.6rem 1.2rem;
     font-size: 1rem;
     border: none;
@@ -33,6 +33,6 @@ button {
     transition: background-color 0.2s ease;
 }
 
-button:hover {
+.easy-btn:hover {
     background-color: var(--main-color);
 }
