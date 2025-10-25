@@ -1,7 +1,7 @@
 .medium-container {
     text-align: center;
     padding: 2rem;
-    min-height: 80vh;
+    margin-bottom: 6rem;
 }
 
 .search-form {
@@ -91,4 +91,11 @@
 
 .error {
     color: red;
+}
+
+/*-------------------- Media Queries --------------------*/
+@media screen and (min-width: 768px) {
+    .medium-container {
+        margin-bottom: 8rem;
+    }
 }
