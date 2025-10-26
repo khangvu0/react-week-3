@@ -6,7 +6,11 @@ export default function Home() {
         <main className="main">
             <section className="intro">
                 <h1 className="title">React Guided Inquiry Week 3</h1>
-                <p className="subtitle">This project is to</p>
+                <p className="subtitle">
+                    The goal of this project is to get more experience working
+                    with React. This project features 3 problems that you can
+                    navigate to in the navbar.
+                </p>
             </section>
             <section className="problems">
                 <div>
