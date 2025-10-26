@@ -18,7 +18,8 @@
     border-radius: 6px;
 }
 
-.search-form button {
+.search-form button,
+.back-btn {
     padding: 0.6rem 1.2rem;
     background-color: var(--secondary-color);
     color: white;
@@ -27,7 +28,8 @@
     cursor: pointer;
 }
 
-.search-form button:hover {
+.search-form button:hover,
+.back-btn:hover {
     background-color: var(--main-color);
 }
 
