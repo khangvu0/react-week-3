@@ -1,7 +1,11 @@
 import express from 'express';
-// import fetch from 'node-fetch';
 import dotenv from 'dotenv';
 import cors from 'cors';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 dotenv.config();
 const app = express();
@@ -44,4 +48,11 @@ app.get('/api/movie/:id', async (req, res) => {
     }
 });
 
-app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
+// Serve frontend build
+app.use(express.static(path.join(__dirname, '../client/dist')));
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/dist/index.html'));
+});
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
