@@ -19,7 +19,7 @@ export default function Medium() {
 
         try {
             const res = await fetch(
-                `http://localhost:5000/api/search?query=${encodeURIComponent(
+                `https://react-week-3.onrender.com/api/search?query=${encodeURIComponent(
                     query
                 )}`
             );
@@ -41,7 +41,9 @@ export default function Medium() {
     const getMovieDetails = async (id) => {
         setLoading(true);
         try {
-            const res = await fetch(`http://localhost:5000/api/movie/${id}`);
+            const res = await fetch(
+                `https://react-week-3.onrender.com/api/movie/${id}`
+            );
             const data = await res.json();
             setSelectedMovie(data);
         } catch {
